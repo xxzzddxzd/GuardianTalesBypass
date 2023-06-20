@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B103CEA42A4053C20034D259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B103CEA32A4053C20034D259 /* Foundation.framework */; };
+		B103CEAF2A4053C20034D259 /* csharpfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = B103CEAE2A4053C20034D259 /* csharpfunc.h */; };
+		B103CEB12A4053C20034D259 /* csharpfunc.mm in Sources */ = {isa = PBXBuildFile; fileRef = B103CEB02A4053C20034D259 /* csharpfunc.mm */; };
+		B103CEB32A4053C20034D259 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = B103CEB22A4053C20034D259 /* fishhook.c */; };
+		B103CEB52A4053C20034D259 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = B103CEB42A4053C20034D259 /* fishhook.h */; };
+		B103CEB72A4053C20034D259 /* hooksocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B103CEB62A4053C20034D259 /* hooksocket.h */; };
+		B103CEB92A4053C20034D259 /* hooksocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B103CEB82A4053C20034D259 /* hooksocket.m */; };
+		B103CEBB2A4053C20034D259 /* p_inc.h in Headers */ = {isa = PBXBuildFile; fileRef = B103CEBA2A4053C20034D259 /* p_inc.h */; };
+		B103CEBD2A4053C20034D259 /* func.mm in Sources */ = {isa = PBXBuildFile; fileRef = B103CEBC2A4053C20034D259 /* func.mm */; };
+		B103CEC02A4053C20034D259 /* gt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B103CEBF2A4053C20034D259 /* gt.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B103CEA02A4053C20034D259 /* gt.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = gt.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B103CEA32A4053C20034D259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B103CEA82A4053C20034D259 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.txt; sourceTree = "<group>"; };
+		B103CEA92A4053C20034D259 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		B103CEAB2A4053C20034D259 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PackageVersion.plist; path = ../PackageVersion.plist; sourceTree = "<group>"; };
+		B103CEAC2A4053C20034D259 /* gt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gt-Prefix.pch"; path = "../gt-Prefix.pch"; sourceTree = "<group>"; };
+		B103CEAE2A4053C20034D259 /* csharpfunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = csharpfunc.h; sourceTree = "<group>"; };
+		B103CEB02A4053C20034D259 /* csharpfunc.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = csharpfunc.mm; sourceTree = "<group>"; };
+		B103CEB22A4053C20034D259 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		B103CEB42A4053C20034D259 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		B103CEB62A4053C20034D259 /* hooksocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hooksocket.h; sourceTree = "<group>"; };
+		B103CEB82A4053C20034D259 /* hooksocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hooksocket.m; sourceTree = "<group>"; };
+		B103CEBA2A4053C20034D259 /* p_inc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = p_inc.h; sourceTree = "<group>"; };
+		B103CEBC2A4053C20034D259 /* func.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = func.mm; sourceTree = "<group>"; };
+		B103CEBE2A4053C20034D259 /* gt.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = gt.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B103CEBF2A4053C20034D259 /* gt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = gt.mm; sourceTree = "<group>"; };
+		B103CEC42A4053C20034D259 /* gt.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = gt.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B103CE9C2A4053C20034D259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B103CEA42A4053C20034D259 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B103CE952A4053C20034D259 = {
+			isa = PBXGroup;
+			children = (
+				B103CEA52A4053C20034D259 /* gt */,
+				B103CEA22A4053C20034D259 /* Frameworks */,
+				B103CEA12A4053C20034D259 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B103CEA12A4053C20034D259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEA02A4053C20034D259 /* gt.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B103CEA22A4053C20034D259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEA32A4053C20034D259 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B103CEA52A4053C20034D259 /* gt */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEBA2A4053C20034D259 /* p_inc.h */,
+				B103CEBC2A4053C20034D259 /* func.mm */,
+				B103CEBE2A4053C20034D259 /* gt.xm */,
+				B103CEBF2A4053C20034D259 /* gt.mm */,
+				B103CEA62A4053C20034D259 /* Package */,
+				B103CEAD2A4053C20034D259 /* x5pc */,
+				B103CEAA2A4053C20034D259 /* Supporting Files */,
+			);
+			path = gt;
+			sourceTree = "<group>";
+		};
+		B103CEA62A4053C20034D259 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEA72A4053C20034D259 /* DEBIAN */,
+				B103CEC12A4053C20034D259 /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		B103CEA72A4053C20034D259 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEA82A4053C20034D259 /* control.txt */,
+				B103CEA92A4053C20034D259 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B103CEAA2A4053C20034D259 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEAB2A4053C20034D259 /* PackageVersion.plist */,
+				B103CEAC2A4053C20034D259 /* gt-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B103CEAD2A4053C20034D259 /* x5pc */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEAE2A4053C20034D259 /* csharpfunc.h */,
+				B103CEB02A4053C20034D259 /* csharpfunc.mm */,
+				B103CEB22A4053C20034D259 /* fishhook.c */,
+				B103CEB42A4053C20034D259 /* fishhook.h */,
+				B103CEB62A4053C20034D259 /* hooksocket.h */,
+				B103CEB82A4053C20034D259 /* hooksocket.m */,
+			);
+			path = x5pc;
+			sourceTree = "<group>";
+		};
+		B103CEC12A4053C20034D259 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEC22A4053C20034D259 /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B103CEC22A4053C20034D259 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEC32A4053C20034D259 /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		B103CEC32A4053C20034D259 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				B103CEC42A4053C20034D259 /* gt.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B103CE9D2A4053C20034D259 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B103CEB72A4053C20034D259 /* hooksocket.h in Headers */,
+				B103CEAF2A4053C20034D259 /* csharpfunc.h in Headers */,
+				B103CEBB2A4053C20034D259 /* p_inc.h in Headers */,
+				B103CEB52A4053C20034D259 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B103CE9F2A4053C20034D259 /* gt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B103CEC72A4053C20034D259 /* Build configuration list for PBXNativeTarget "gt" */;
+			buildPhases = (
+				B103CE9A2A4053C20034D259 /* ShellScript */,
+				B103CE9B2A4053C20034D259 /* Sources */,
+				B103CE9C2A4053C20034D259 /* Frameworks */,
+				B103CE9D2A4053C20034D259 /* Headers */,
+				B103CE9E2A4053C20034D259 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gt;
+			productName = gt;
+			productReference = B103CEA02A4053C20034D259 /* gt.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B103CE962A4053C20034D259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B103CE9F2A4053C20034D259 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B103CE992A4053C20034D259 /* Build configuration list for PBXProject "gt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B103CE952A4053C20034D259;
+			productRefGroup = B103CEA12A4053C20034D259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B103CE9F2A4053C20034D259 /* gt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B103CE9A2A4053C20034D259 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		B103CE9E2A4053C20034D259 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B103CE9B2A4053C20034D259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B103CEB32A4053C20034D259 /* fishhook.c in Sources */,
+				B103CEC02A4053C20034D259 /* gt.mm in Sources */,
+				B103CEB92A4053C20034D259 /* hooksocket.m in Sources */,
+				B103CEB12A4053C20034D259 /* csharpfunc.mm in Sources */,
+				B103CEBD2A4053C20034D259 /* func.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B103CEC52A4053C20034D259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		B103CEC62A4053C20034D259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		B103CEC82A4053C20034D259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = x5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gt/gt-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					/opt/iOSOpenDev/lib/libsubstrate.dylib,
+					"-lz.1.2.8",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		B103CEC92A4053C20034D259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = x5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gt/gt-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					/opt/iOSOpenDev/lib/libsubstrate.dylib,
+					"-lz.1.2.8",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B103CE992A4053C20034D259 /* Build configuration list for PBXProject "gt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B103CEC52A4053C20034D259 /* Debug */,
+				B103CEC62A4053C20034D259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B103CEC72A4053C20034D259 /* Build configuration list for PBXNativeTarget "gt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B103CEC82A4053C20034D259 /* Debug */,
+				B103CEC92A4053C20034D259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B103CE962A4053C20034D259 /* Project object */;
+}
