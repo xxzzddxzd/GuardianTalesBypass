@@ -41,6 +41,11 @@ void (*tp2_setuserinfo)(long x0,long x1);
 void ne_tp2_setuserinfo(long x0,long x1){
     XLog(@"tp2_setuserinfo")
 }
+void (*tp2_setuserinfowithlicense)(long x0,long x1);
+void ne_tp2_setuserinfowithlicense(long x0,long x1){
+    XLog(@"tp2_setuserinfowithlicense")
+}
+
 void execNewAc(){
     XLog(@"---START INJECT---")
     id a =[NSBundle mainBundle];
@@ -50,7 +55,8 @@ void execNewAc(){
     const char * bin =[bpbin UTF8String];
     MSImageRef image = MSGetImageByName(bin);
     void *_tp2_setuserinfo = MSFindSymbol(image,"_tp2_setuserinfo");
-    MSHookFunction( _tp2_setuserinfo, (void*)ne_tp2_setuserinfo, (void**)&tp2_setuserinfo);
+    MSHookFunction( MSFindSymbol(image,"_tp2_setuserinfo"), (void*)ne_tp2_setuserinfo, (void**)&tp2_setuserinfo);
+//    MSHookFunction( MSFindSymbol(image,"_tp2_setuserinfowithlicense"), (void*)ne_tp2_setuserinfowithlicense, (void**)&tp2_setuserinfowithlicense);
 }
 
 

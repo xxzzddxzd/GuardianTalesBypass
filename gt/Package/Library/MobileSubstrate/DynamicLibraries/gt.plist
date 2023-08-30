@@ -7,6 +7,8 @@
 		<key>Bundles</key>
 		<array>
 			<string>com.bilibili.snake</string>
+			<string>com.bilibili.fatego</string>
+			<string>com.bilibili.umamusu</string>
 		</array>
 	</dict>
 </dict>
